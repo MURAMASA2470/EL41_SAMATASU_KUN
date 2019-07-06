@@ -40,7 +40,7 @@
 
                          <v-flex xs8 d-flex px-3>
                             <v-select
-                            :items="items"
+                            :items="subjectList"
                             solo
                             ></v-select>
                         </v-flex>
@@ -55,7 +55,7 @@
 
                          <v-flex xs8 d-flex px-3>
                             <v-select
-                            :items="items"
+                            :items="genreList"
                             solo
                             ></v-select>
                         </v-flex>
@@ -70,7 +70,7 @@
 
                          <v-flex xs8 d-flex px-3>
                             <v-select
-                            :items="items"
+                            :items="amountList"
                             solo
                             ></v-select>
                         </v-flex>
@@ -95,17 +95,17 @@
         <div>
             <h3 class="text-xs-center my-4">宿題一覧</h3>
 
-            <v-sheet class="work-item" v-for="n in 6" :key="n" color="#ADFF57">
+            <v-sheet class="work-item" v-for="(subject, i) in x['教科']" :key="i" :color="subject['色']">
                 
-                    <label class="work-content">{{ subject }} の {{ category }}</label>
-                    <label class="work-amount">{{ workAmount }}</label>
+                    <label class="work-content">{{ subject['名前'] }} の {{ x['種類'][i]['名前'] }}</label>
+                    <label class="work-amount">{{5+i}}{{ x['種類'][i]['単位'] }}</label>
                 
             </v-sheet>
 
         </div>
 
         <div class="next-btn">
-            <v-btn color="#EB8712" round>
+            <v-btn color="#EB8712" round to='profComp'>
                 次へ
             </v-btn>
         </div>
@@ -159,12 +159,27 @@
 </style>
 
 <script>
+import setting from "../config/samatasu.json"
+
+console.log(setting['教科'][0]['色']);
+
 export default {
     data: () => {
         return {
             dialog: false,
-
+            x: setting, 
+            subjectList: setting['教科'].map((x) => {
+                return x['名前'];
+            }), 
+            genreList : setting['種類'].map((x) => {
+                return x['名前'];
+            }), 
+            amountList: [...Array(99).keys()].map(i => ++i)
+            
         }
+    }, 
+    created: () => {
+     
     }
 }
 </script>
