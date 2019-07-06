@@ -66,7 +66,7 @@
         padding: 5px 10px;
         position: relative;
         background-color: black;
-        border: solid 2ps white !important;
+        border: solid 2px white !important;
     }
 
         .work-content {

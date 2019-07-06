@@ -1,6 +1,6 @@
 <template>
 <div>
-    <toolbar />
+    <!-- <toolbar /> -->
     <h3 class="text-xs-center my-4" style="color:red;">宿題を選択</h3>
     <v-container style="width: 80vw;">
      <v-flex xs12 sm6 d-flex>
