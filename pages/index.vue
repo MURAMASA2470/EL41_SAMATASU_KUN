@@ -1,4 +1,4 @@
-<template>
+<template 　class="v-content__wrap">
 <div>
   
 <h1 class="text-xs-center my-4">Line,Twitter<br>連携画面</h1>
