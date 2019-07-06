@@ -1,10 +1,9 @@
 <template>
 <div>
 <h1 class="text-xs-center my-4">Line,Twitter<br>連携画面</h1>
-        <v-btn color="#EB8712" class="get-bu">
+        <v-btn　href="profInput" color="#EB8712" class="get-bu">
             新規登録
         </v-btn>
-
         <hr class="border">
 
         <v-btn color="#1DCD00" class="sns-bu">
