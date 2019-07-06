@@ -105,7 +105,7 @@
         </div>
 
         <div class="next-btn">
-            <v-btn to="profComp" color="#EB8712" round >
+            <v-btn href="/profComp" color="#EB8712" round >
                 次へ
             </v-btn>
         </div>
