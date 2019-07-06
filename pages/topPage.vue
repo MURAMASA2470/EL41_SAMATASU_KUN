@@ -7,7 +7,6 @@
 
         <a class="cancel" href="http://localhost:3000/profComp">キャンセル</a>
 
-        
 </div>
 </template>
 
