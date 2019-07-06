@@ -14,7 +14,7 @@
         </div>
 
         <div class="next-btn">
-            <v-btn color="#EB8712" round to='profComp'>
+            <v-btn color="#EB8712" round to='submitTask'>
                 課題を提出する
             </v-btn>
         </div>
@@ -31,6 +31,12 @@
 
     .v-content__wrap {
         background-color: black !important;
+    }
+
+    .next-btn .v-btn{
+        border: solid 2px red !important;
+        background-color: rgba(0, 0, 0, 0.8) !important;
+        color: white;
     }
 
     .v-dialog .v-btn {
@@ -60,7 +66,7 @@
         padding: 5px 10px;
         position: relative;
         background-color: black;
-        border: solid 2ps white;
+        border: solid 2ps white !important;
     }
 
         .work-content {
