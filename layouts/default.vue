@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app light>
    
     <v-content>
       <!-- <v-container> -->
@@ -13,6 +13,18 @@
     </v-footer> -->
   </v-app>
 </template>
+
+<style>
+  .v-btn {
+    color: white !important;
+    font-weight: 900;
+    font-size: 1.25rem;
+    width: 80vw;
+    height: 50px;
+    margin: 0 40px;
+  }
+</style>
+
 
 <script>
 export default {
