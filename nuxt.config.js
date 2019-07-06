@@ -44,8 +44,17 @@ export default {
     '@nuxtjs/vuetify',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/onesignal',
     '@nuxtjs/pwa',
-  ],
+  ],oneSignal: {
+    init: {
+      appId: '29150282-e502-4381-b852-038777a4a86d',
+      allowLocalhostAsSecureOrigin: true,
+      welcomeNotification: {
+        disable: true
+      }
+    }
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -76,5 +85,6 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },serverMiddleware: ['~/server']
+ 
 }
