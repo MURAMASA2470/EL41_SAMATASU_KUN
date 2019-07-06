@@ -41,11 +41,11 @@
         </v-layout>
     </v-container>
      <div class="text-xs-center">
-    <v-btn  to="task" round color="orange">次へ</v-btn>
+    <v-btn  href="/task" round color="orange">次へ</v-btn>
   </div>
 </div>
 </template>
-<script scoped>
+<script>
 import toolbar from '~/components/toolbar.vue'
 import stepper from '~/components/stepper.vue'
 export default {

@@ -1,4 +1,4 @@
-<template>
+<template　id="app">
     <div>
         
         <div>
@@ -14,7 +14,7 @@
         </div>
 
         <div class="next-btn">
-            <v-btn  to="submitTask" color="#EB8712" round>
+            <v-btn  href="/submitTask" color="#EB8712" round>
                 課題を提出する
             </v-btn>
         </div>
@@ -23,7 +23,7 @@
     </div>
 </template>
 
-<style scoped>
+<style  >
 
     * {
         color: red;
@@ -54,16 +54,12 @@
 
     }
 
-    body {
-                        background-color: black !important;
+   #app5 {
+                        background-color:black !important;
 
     }
 
-    html {
-                        background-color: black !important;
-
-    }
-
+   
     .next-btn .v-btn{
         border: solid 2px red !important;
         background-color: rgba(0, 0, 0, 0.8) !important;

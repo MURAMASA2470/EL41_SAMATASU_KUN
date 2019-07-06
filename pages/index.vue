@@ -1,8 +1,8 @@
-<template 　class="v-content__wrap">
-<div>
+<template>
+<div class="v-content__wrp">
   
 <h1 class="text-xs-center my-4">Line,Twitter<br>連携画面</h1>
-        <v-btn to="profInput" color="orange" class="get-bu">
+        <v-btn href="/profInput" color="orange" class="get-bu">
             新規登録
         </v-btn>
         <hr class="border">
@@ -29,7 +29,7 @@ export default {
    margin-bottom: 32px;
    border-radius: 100px;
   }
-.v-content__wrap{
+.v-content__wrp{
   background-color: #6ADDFF;
 }
 h1{
@@ -48,4 +48,8 @@ h1{
 .sns-bu{
   border-radius: 100px;
 }
+  html {
+                        background-color: #6ADDFF !important;
+
+    }
 </style>

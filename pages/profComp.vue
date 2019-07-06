@@ -1,4 +1,4 @@
-<template>
+<template id="app2">
 <div>
     <toolbar />
 <h3 class="text-xs-center my-4">SNS連携をする事で<br />このアプリの機能を全て使えます。</h3>
@@ -21,7 +21,7 @@
        
         </v-container>
    <div class="text-xs-center">
-    <v-btn @click="push" to="taskDark" round color="orange">登録完了</v-btn>
+    <v-btn href="/taskDark" round color="orange">登録完了</v-btn>
   </div>
 </div>
 </template>
@@ -55,9 +55,9 @@ export default {
       }
     };
   },methods: {
-      push: function () {
-          axios.post(this.params);
-      }
+       push: function () {
+      //     axios.post(this.params);
+       }
   },
    components: {
         toolbar
@@ -83,4 +83,6 @@ mounted() {
   #card {
 margin-bottom: 32px;
   }
+ 
 </style>
+
