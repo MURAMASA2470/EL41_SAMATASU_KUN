@@ -3,14 +3,15 @@
     <toolbar leftBtn=true  />
     <!-- <stepper /> -->
     <v-container>
-      <v-layout>
-         <v-flex xs6 sm6 md3>
+      <v-layout >
+         <v-flex xs6 sm6 md3  style="padding-right:10px;">
              <p>苗字</p>
           <v-text-field
            solo
+           pr4
           ></v-text-field>
         </v-flex>
-        <v-flex xs6 sm6 md3>
+        <v-flex xs6 sm6 md3 style="padding-left:10px;">
            <p>名前</p>
           <v-text-field
            solo
@@ -29,6 +30,7 @@
         </v-layout>
      </v-container>
      <v-container>
+          <p>学年</p>
       <v-layout>
         <v-flex xs12 sm6 d-flex>
             <v-select

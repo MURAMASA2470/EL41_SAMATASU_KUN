@@ -1,5 +1,5 @@
 <template>
-  
+  <h1>師匠 is USAN-KUSAI</h1>
 </template>
 
 <script>
