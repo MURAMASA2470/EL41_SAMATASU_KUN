@@ -21,7 +21,7 @@
        
         </v-container>
    <div class="text-xs-center">
-    <v-btn round color="orange">登録完了</v-btn>
+    <v-btn @click="push" round color="orange">登録完了</v-btn>
   </div>
 </div>
 </template>
@@ -34,7 +34,30 @@ export default {
     return {
       user: {},
       error: null,
+      params:{
+           method: 'post',
+      url: 'https://onesignal.com/api/v1/notifications',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: 'OTkzMmNmNGMtODdmMC00Njg2LWJmNzUtYjJhMWExOTU5Zjg0'
+      },
+      data: {
+        app_id: '29150282-e502-4381-b852-038777a4a86d',
+        headings: {
+          en: 'notification test',
+          ja: '宿題しろよおい！'
+        },
+        contents: {
+          en: 'This is notification test',
+          ja: '宿題しろよおい！'
+        },
+      }
+      }
     };
+  },methods: {
+      push: function () {
+          axios.post(this.params);
+      }
   },
    components: {
         toolbar
@@ -46,17 +69,6 @@ mounted() {
     }).then(res => {
       // 3
       this.user = res.data.user;
-    //   axios.post('https://api.twitter.com/1.1/statuses/update.json', {
-    //      status: 'テスト',
-    //   });
-    // //   axios.post(Helper.getUserAPI(),{
-    // //     headers: {
-    // //                 'Content-Type': 'application/json',
-    // //                 'Authorization':res.oauth_token
-    // //     },
-    // //   })
-    //   console.log(res.oauth_token);
-      //authToken取得
     }).catch(err => {
       this.error = err;
     });
