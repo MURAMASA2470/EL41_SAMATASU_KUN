@@ -1,7 +1,7 @@
 <template>
 <div>
-    <toolbar  />
-  
+    <toolbar leftBtn=true  />
+    <!-- <stepper /> -->
     <v-container>
       <v-layout>
          <v-flex xs6 sm6 md3>
@@ -45,12 +45,14 @@
 </template>
 <script>
 import toolbar from '~/components/toolbar.vue'
+import stepper from '~/components/stepper.vue'
 export default {
    data: () => ({
-      items: ['1年', '2年', '3年', '4年', '5年', '6年']
+      items: ['1年', '2年', '3年', '4年', '5年', '6年'],
     }),
-components: {  
-   toolbar
+    components: {  
+        toolbar,
+        stepper
   }
 }
 </script>
