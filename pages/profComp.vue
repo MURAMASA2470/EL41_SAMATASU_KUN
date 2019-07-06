@@ -21,7 +21,7 @@
        
         </v-container>
    <div class="text-xs-center">
-    <v-btn @click="push" round color="orange">登録完了</v-btn>
+    <v-btn @click="push" href="task_dark" round color="orange">登録完了</v-btn>
   </div>
 </div>
 </template>

@@ -27,10 +27,41 @@
 
     * {
         color: red;
+        
+    }
+
+    .__nuxt {
+                background-color: black !important;
+
+    }
+
+    .__layout {
+                background-color: black !important;
+
     }
 
     .v-content__wrap {
         background-color: black !important;
+    }
+
+    .application--wrap {
+                background-color: black !important;
+
+    }
+
+    .v-content {
+                        background-color: black !important;
+
+    }
+
+    body {
+                        background-color: black !important;
+
+    }
+
+    html {
+                        background-color: black !important;
+
     }
 
     .next-btn .v-btn{
