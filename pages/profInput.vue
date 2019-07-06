@@ -41,7 +41,7 @@
         </v-layout>
     </v-container>
      <div class="text-xs-center">
-    <v-btn  to="/task" round color="orange">次へ</v-btn>
+    <v-btn  to="task" round color="orange">次へ</v-btn>
   </div>
 </div>
 </template>

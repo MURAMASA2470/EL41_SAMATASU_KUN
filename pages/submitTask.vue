@@ -33,7 +33,7 @@
     </v-progress-circular>
    
         <div class="text-xs-center next-btn" style="margin-top:200px;">
-            <v-btn @click="progress" round color="orange">課題を提出</v-btn>
+            <v-btn @click="progress"  round color="orange">課題を提出</v-btn>
         </div>
 </div>
 </template>
