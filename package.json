@@ -11,14 +11,21 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/vuetify": "0.5.5",
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/onesignal": "^3.0.0-beta.16",
     "@nuxtjs/pwa": "^2.6.0",
-    "nuxt": "^2.0.0"
+    "@nuxtjs/vuetify": "0.5.5",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "express-session": "^1.16.2",
+    "morgan": "^1.9.1",
+    "nuxt": "^2.0.0",
+    "passport": "^0.4.0",
+    "passport-twitter": "^1.0.4"
   },
   "devDependencies": {
+    "nodemon": "^1.18.9",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "nodemon": "^1.18.9"
+    "stylus-loader": "^3.0.2"
   }
 }
