@@ -14,7 +14,7 @@
         </div>
 
         <div class="next-btn">
-            <v-btn color="#EB8712" round to='submitTask'>
+            <v-btn  to="submitTask" color="#EB8712" round>
                 課題を提出する
             </v-btn>
         </div>

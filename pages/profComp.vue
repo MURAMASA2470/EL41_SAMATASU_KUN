@@ -76,7 +76,7 @@ mounted() {
 }
 </script>
 
-<style scope>
+<style scoped>
   #btnView {
        margin-bottom: 32px;
   }

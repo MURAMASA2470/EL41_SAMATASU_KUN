@@ -67,7 +67,7 @@ export default {
 
 }
 </script>
-<style scope>
+<style scoped>
 #progress{
     display: none;
     margin-left:150px;

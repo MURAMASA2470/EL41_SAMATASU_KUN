@@ -15,7 +15,7 @@
     }
   }
 </script>
-<style scope>
+<style scoped>
 .stepBar {
   display: flex;
   position: relative;

@@ -45,7 +45,7 @@
   </div>
 </div>
 </template>
-<script>
+<script scoped>
 import toolbar from '~/components/toolbar.vue'
 import stepper from '~/components/stepper.vue'
 export default {

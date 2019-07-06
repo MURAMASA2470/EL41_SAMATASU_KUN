@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 
 .v-btn {
    margin-bottom: 32px;
